@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minishop Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    @media screen and (max-width:576px) {
+      .my-height {
+        height: 450px;
+      }
+    }
+
+    /*  --------- Gallery Section Style -------- */
+    #crd1 {
+      background: url(images/choose-1.jpg.webp);
+      background-size: cover;
+    }
+
+    #crd2 {
+      background: url(images/choose-2.jpg.webp);
+      background-size: cover;
+    }
+
+    #crd4 {
+      background: url(images/choose-3.jpg.webp) center;
+      background-size: cover;
+    }
+
+    /*  -------- Shoe Section Style --------- */
+
+    @media screen and (min-width:992px) and (max-width:1200px) {
+      .my-shoe-img {
+        width: 400px !important;
+      }
+    }
+
+    @media screen and (min-width:768px) and (max-width:992px) {
+      .my-shoe-img {
+        width: 260px !important;
+      }
+
+      .my-shoe-list {
+        width: 60px !important;
+      }
+
+      .my-number-font-size {
+        font-size: 1.7rem !important;
+      }
+
+      .my-days-font-size {
+        font-size: 0.8rem !important;
+      }
+    }
+
+    @media screen and (max-width:768px) {
+      .my-shoe-img {
+        width: 280px !important;
+      }
+
+      .my-shoe-list {
+        width: 60px !important;
+      }
+
+      .my-number-font-size {
+        font-size: 1.3rem !important;
+      }
+    }
+
+    /* --------- Footer Img Style -------- */
+    @media screen and (max-width: 767px) {
+      .my-footer-height {
+        height: 600px !important;
+      }
+    }
+
+    .my-hover:hover {
+      color: #c2a942;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- head starts here -->
+  <div class="bg-dark">
+
+    <div class="container">
+
+      <div class="row bg-dark text-light p-1" style="font-size: small;">
+
+        <div class="col col-12 col-sm-12 col-md-4">
+          <i class="fa-solid fa-phone"></i> +1235 2355 98
+        </div>
+
+        <div class="col col-12 col-sm-12 col-md-4">
+          <i class="fa-solid fa-paper-plane"></i> YOUREMAIL@EMAIL.COM
+        </div>
+
+        <div class="col col-12 col-sm-12 col-md-4">
+          3-5 BUSINESS DAYS DELIVERY & FREE RETURNS
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- head ends here -->
+
+
+  <!-- nav starts here -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #dbcc8f !important">
+    <div class="container">
+
+      <a class="navbar-brand col-6" href="#">
+        <h3 class="fw-bold">Minishop</h3>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CATALOG
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Shop</a></li>
+              <li><a class="dropdown-item" href="#">Single Product</a></li>
+              <li><a class="dropdown-item" href="#">Cart</a></li>
+              <li><a class="dropdown-item" href="#">Checkout</a></li>
+            </ul>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-cart-shopping"></i> <span>[0]</span>
+            </a>
+          </li>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- nav ends here -->
+
+
+  <!-- slider starts here -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide pb-3" data-bs-ride="carousel"
+    style="background-color: #dbcc8f !important">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+
+          <div class="row d-flex align-items-center">
+
+            <div class="col col-12 col-md-5 ps-4 py-3" data-aos="fade-up">
+              <div class="bg-dark text-light w-50 text-center p-1">
+                #NEW ARRIVAL
+              </div>
+              <h2 class="fs-1 fw-normal py-3">
+                SHOES COLLECTON 2023
+              </h2>
+              <span>
+                A small river named Duden flows by their place and supplies it with the necessary
+                regelialia. It's the paradisematic country.
+              </span>
+              <br>
+              <button class="btn text-light py-2 mt-4" style="background-color: #c2a942 !important">Discover
+                Now</button>
+            </div>
+
+            <img src="images/bg_1.png.webp" class="col col-12 col-md-7 my-height" alt="..." height="700">
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+
+          <div class="row d-flex align-items-center">
+
+            <div class="col col-12 col-md-5 ps-4 py-3" data-aos="fade-up">
+              <div class="bg-dark text-light w-50 text-center p-1">
+                #NEW ARRIVAL
+              </div>
+              <h2 class="fs-1 fw-normal py-3">
+                NEW SHOES WINTER COLLECTON
+              </h2>
+              <span>
+                A small river named Duden flows by their place and supplies it with the necessary
+                regelialia. It's the paradisematic country.
+              </span>
+              <br>
+              <button class="btn text-light py-2 mt-4" style="background-color: #c2a942 !important">Discover
+                Now</button>
+            </div>
+
+            <img src="images/bg_2.png.webp" class="col col-12 col-md-7 my-height" alt="..." height="700">
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- slider ends here -->
+
+
+  <!-- FAQ Starts Here -->
+  <div class="p-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col col-12 col-lg-4" data-aos="fade-up">
+          <i class="fa-solid fa-bag-shopping fs-1 my-4"></i>
+          <h5 class="fw-bold py-3">Free Shipping</h5>
+          <span class="text-secondary py-3">Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia, there live the blind texts.</span>
+        </div>
+        <div class="col col-12 col-lg-4" data-aos="fade-up">
+          <i class="fa-solid fa-phone-volume fs-1 my-4"></i>
+          <h5 class="fw-bold py-3">Support Customer</h5>
+          <span class="text-secondary py-3">Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia, there live the blind texts.</span>
+        </div>
+        <div class="col col-12 col-lg-4" data-aos="fade-up">
+          <i class="fa-solid fa-credit-card fs-1 my-4"></i>
+          <h5 class="fw-bold py-3">Secure Payments</h5>
+          <span class="text-secondary py-3">Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia, there live the blind texts.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Ends Here -->
+
+
+  <!-- Products Section Starts Here -->
+  <div class="" style="background-color: #f8f9fa !important">
+
+    <h1 class="text-center pt-5 pb-4" data-aos="fade-up">New Shoes Arrival</h1>
+    <p class="text-center text-secondary pb-5" data-aos="fade-up">Far far away, behind the word mountains, far from the countries Vokalia
+      and Consonantia</p>
+
+    <div class="container">
+
+      <div class="row pb-4">
+        <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
+          <div class="card">
+            <img src="images/product-1.png.webp" class="card-img-top" alt="..."
+              style="background-color: #f0ecec !important;">
+
+
+            <div class="card-body">
+
+              <div class="row">
+
+                <div class="col col-6" >
+                  <span class="text-secondary">LIFESTYLE</span>
+                </div>
+
+                <div class="col col-6 pt-1 text-warning" style="font-size: 0.7rem !important;">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+              </div>
+
+              <span class="fw-bold">NIKE FREE RN 2021 ID</span>
+
+              <p class="card-text">$120.00</p>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
+          <div class="card">
+            <img src="images/product-2.png.webp" class="card-img-top" alt="..."
+              style="background-color: #f0ecec !important;">
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col col-6">
+                  <span class="text-secondary">LIFESTYLE</span>
+                </div>
+
+                <div class="col col-6 pt-1 text-warning" style="font-size: 0.7rem !important;">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+              </div>
+
+              <span class="fw-bold">NIKE FREE RN 2021 ID</span>
+
+              <div class="row">
+                <del class="col col-6 text-secondary">$120.00</del>
+                <p class="card-text col col-6">$120.00</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
+          <div class="card">
+            <img src="images/product-3.png.webp" class="card-img-top" alt="..."
+              style="background-color: #f0ecec !important;">
+
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col col-6">
+                  <span class="text-secondary">LIFESTYLE</span>
+                </div>
+
+                <div class="col col-6 pt-1 text-warning" style="font-size: 0.7rem !important;">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+              </div>
+
+              <span class="fw-bold">NIKE FREE RN 2021 ID</span>
+
+              <p class="card-text">$120.00</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3 pb-4" data-aos="fade-up">
+          <div class="card">
+            <img src="images/product-4.png.webp" class="card-img-top" alt="..."
+              style="background-color: #f0ecec !important;">
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col col-6">
+                  <span class="text-secondary">LIFESTYLE</span>
+                </div>
+
+                <div class="col col-6 pt-1 text-warning" style="font-size: 0.7rem !important;">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+              </div>
+
+              <span class="fw-bold">NIKE FREE RN 2021 ID</span>
+
+              <p class="card-text">$120.00</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row pb-5">
+        <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
+          <div class="card">
+            <img src="images/product-5.png.webp" class="card-img-top" alt="..."
+              style="background-color: #f0ecec !important;">
+
+
+            <div class="card-body">
+
+              <div class="row">
+
+                <div class="col col-6">
+                  <span class="text-secondary">LIFESTYLE</span>
+                </div>
+
+                <div class="col col-6 pt-1 text-warning" style="font-size: 0.7rem !important;">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+              </div>
+
+              <span class="fw-bold">NIKE FREE RN 2021 ID</span>
+
+              <p class="card-text">$120.00</p>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
+          <div class="card">
+            <img src="images/product-6.png.webp" class="card-img-top" alt="..."
+              style="background-color: #f0ecec !important;">
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col col-6">
+                  <span class="text-secondary">LIFESTYLE</span>
+                </div>
+
+                <div class="col col-6 pt-1 text-warning" style="font-size: 0.7rem !important;">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+              </div>
+
+              <span class="fw-bold">NIKE FREE RN 2021 ID</span>
+
+              <div class="row">
+                <del class="col col-6 text-secondary">$120.00</del>
+                <p class="card-text col col-6">$120.00</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
+          <div class="card">
+            <img src="images/product-7.png.webp" class="card-img-top" alt="..."
+              style="background-color: #f0ecec !important;">
+
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col col-6">
+                  <span class="text-secondary">LIFESTYLE</span>
+                </div>
+
+                <div class="col col-6 pt-1 text-warning" style="font-size: 0.7rem !important;">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+              </div>
+
+              <span class="fw-bold">NIKE FREE RN 2021 ID</span>
+
+              <p class="card-text">$120.00</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
+          <div class="card">
+            <img src="images/product-8.png.webp" class="card-img-top" alt="..."
+              style="background-color: #f0ecec !important;">
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col col-6">
+                  <span class="text-secondary">LIFESTYLE</span>
+                </div>
+
+                <div class="col col-6 pt-1 text-warning" style="font-size: 0.7rem !important;">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+              </div>
+
+              <span class="fw-bold">NIKE FREE RN 2021 ID</span>
+
+              <p class="card-text">$120.00</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Products Section Ends Here -->
+
+
+
+  <!-- Gallery Section Starts Here -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 d-flex flex-column justify-content-end" id="crd1">
+        <div class="text-center p-5 text-light">
+          <p class="fs-6 fw-bold">MEN'S SHOES</p>
+          <h2 class="fs-2 fw-bold">Men's Collection</h2>
+          <p class="fs-6">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+            ocean.</p>
+          <button type="button" class="btn btn-dark rounded-pill">shop now</button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="row">
+          <div class="col-12" id="crd2">
+            <div class="row">
+              <div class="col-md-6"></div>
+              <div class="col-12 col-md-6">
+                <div class="py-5 pe-5 text-light text-center">
+                  <p class="fs-6 fw-bold">MEN'S SHOES</p>
+                  <h2 class="fs-2 fw-bold">Men's Collection</h2>
+                  <p class="fs-6">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.</p>
+                  <button type="button" class="btn btn-dark rounded-pill">shop now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" id="crd3">
+            <div class="text-center p-5">
+              <p class="fs-6 fw-bold">MEN'S SHOES</p>
+              <h2 class="fs-2 fw-bold">Men's Collection</h2>
+              <p class="fs-6">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                language ocean.</p>
+              <button type="button" class="btn btn-dark rounded-pill">shop now</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" id="crd4">
+            <div class="text-center p-5 text-light">
+              <p class="fs-6 fw-bold">MEN'S SHOES</p>
+              <h2 class="fs-2 fw-bold">Men's Collection</h2>
+              <p class="fs-6">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                language ocean.</p>
+              <button type="button" class="btn btn-dark rounded-pill">shop now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery Section Ends Here -->
+
+
+  <!-- Shoe Section Starts Here -->
+  <div class="container-fluid" style="background-color: #dbcc8f !important;">
+    <div class="container">
+
+      <div class="row p-4">
+
+        <div class="col col-12 col-md-6">
+          <img src="images/prod-1.png.webp" alt="" width="500" class="my-shoe-img">
+        </div>
+
+        <div class="col col-12 col-md-6 ">
+
+          <p class="text-light fw-bold">DEAL OF THE MONTH</p>
+
+          <h1 class="text-light fw-bold">Deal of the month</h1>
+
+
+          <div class="row text-light fw-bold pt-4 w-75">
+            <div class="col">
+              <span class="fs-1 my-number-font-size">-1466</span>
+              <span class="text-light fw-normal pt-1 my-days-font-size">DAYS</span>
+            </div>
+            <div class="col">
+              <span class="fs-1 my-number-font-size">12</span>
+              <span class="text-light fw-normal pt-1 my-days-font-size">HOURS</span>
+            </div>
+            <div class="col">
+              <span class="fs-1 my-number-font-size">50</span>
+              <span class="text-light fw-normal pt-1 my-days-font-size">MINUTES</span>
+            </div>
+            <div class="col">
+              <span class="fs-1 my-number-font-size">25</span>
+              <span class="text-light fw-normal pt-1 my-days-font-size">SECONDS</span>
+            </div>
+
+          </div>
+
+
+          <h2 class="fw-bold pt-4 pb-2">Nike Free RN 2019 iD</h2>
+
+          <div class="fw-bold fs-4">
+            <del>$120.00</del>
+            <span class="text-light ps-3">$80.00</span>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <img src="images/product-6.png.webp" alt="" width="100" class="my-shoe-list">
+            </div>
+
+            <div class="col">
+              <img src="images/product-2.png.webp" alt="" width="100" class="my-shoe-list">
+            </div>
+
+            <div class="col">
+              <img src="images/product-4.png.webp" alt="" width="100" class="my-shoe-list">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Shoe Section Ends Here -->
+
+
+  <!-- Card Section Starts Here -->
+  <div class="container-fluid">
+    <div class="container p-md-5 mt-4">
+      <div class="row p-md-5">
+
+        <div class="col col-12 col-lg-6">
+          <div class="row d-flex align-items-center p-4 my-2" style=" background-color: #f9f3f3 !important;" data-aos="fade-up">
+            <div class="col col-2">
+              <i class="fa-solid fa-bag-shopping fs-1"></i>
+            </div>
+            <div class="col col-10">
+              <h4 class="fw-bold">Free Shipping</h4>
+              <p class="text-secondary">Separated they live in. A small river named Duden flows</p>
+            </div>
+          </div>
+
+          <div class="row d-flex align-items-center p-4 my-2" style="background-color: #e1d6d6 !important;" data-aos="fade-up">
+            <div class="col col-2">
+              <i class="fa-solid fa-hand-holding-heart fs-1"></i>
+            </div>
+            <div class="col col-10">
+              <h4 class="fw-bold">Valuable Gifts</h4>
+              <p class="text-secondary">Separated they live in. A small river named Duden flows</p>
+            </div>
+          </div>
+
+          <div class="row d-flex align-items-center p-4 my-2" style="background-color: #cfc083 !important;" data-aos="fade-up">
+            <div class="col col-2">
+              <i class="fa-solid fa-credit-card fs-1"></i>
+            </div>
+            <div class="col col-10">
+              <h4 class="fw-bold">Secure Payments</h4>
+              <p class="text-light">Separated they live in. A small river named Duden flows</p>
+            </div>
+          </div>
+
+          <div class="row bg-dark text-light d-flex align-items-center p-4 my-2" data-aos="fade-up">
+            <div class="col col-2">
+              <i class="fa-solid fa-phone-volume fs-1"></i>
+            </div>
+            <div class="col col-10">
+              <h4 class="fw-bold">All Day Support</h4>
+              <p>Separated they live in. A small river named Duden flows</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col col-12 col-lg-6">
+          <h1 class="pt-2" data-aos="fade-up">Our satisfied customer says</h1>
+
+          <p class="text-secondary py-4" data-aos="fade-up">Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia, there live the blind texts. Separated they live in
+          </p>
+
+          <div class="" data-aos="fade-up">
+            <img src="images/person_1.jpg.webp" alt="" width="100" style="border-radius: 50% !important;">
+          </div>
+
+          <p class="text-secondary py-4 fs-4" data-aos="fade-up">Far far away, behind the word mountains, far from the countries Vokalia
+            and Consonantia, there live the blind texts.
+          </p>
+
+          <h4 style="color: #cfc083 !important;" data-aos="fade-up">Garreth Smith</h4>
+          <p class="text-secondary" data-aos="fade-up">MARKETING MANAGER</p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Section Ends Here -->
+
+
+  <!-- Footer img Starts Here -->
+  <div class="container-fluid text-center p-4">
+    <h1>Follow Us On Instagram</h1>
+
+    <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
+      Consonantia, there live the blind texts. Separated they live in</p>
+  </div>
+
+
+  <div class="footer-img">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-12 col-md-4 col-lg-2 my-footer-height"
+          style="background-image: url('images/gallery-1.jpg.webp'); background-size: cover; height: 290px;" data-aos="fade-up">
+        </div>
+        <div class="col col-12 col-md-4 col-lg-2 my-footer-height"
+          style="background-image: url('images/gallery-2\ nw.jpg'); background-size: cover; height: 290px;" data-aos="fade-up">
+        </div>
+        <div class="col col-12 col-md-4 col-lg-2 my-footer-height"
+          style="background-image: url('images/gallery-3\ nw.jpg'); background-size: cover; height: 290px;" data-aos="fade-up">
+        </div>
+        <div class="col col-12 col-md-4 col-lg-2 my-footer-height"
+          style="background-image: url('images/gallery-4\ nw.jpg'); background-size: cover; height: 290px;" data-aos="fade-up">
+        </div>
+        <div class="col col-12 col-md-4 col-lg-2 my-footer-height"
+          style="background-image: url('images/gallery-5.jpg.webp'); background-size: cover; height: 290px;" data-aos="fade-up">
+        </div>
+        <div class="col col-12 col-md-4 col-lg-2 my-footer-height"
+          style="background-image: url('images/gallery-6\ nw.jpg'); background-size: cover; height: 290px;" data-aos="fade-up">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer img Ends Here -->
+
+
+  <!-- Footer Starts Here -->
+  <div class="container-fluid p-5" style="background-color: black;">
+    <div class="container text-light">
+
+      <div class="row">
+        <div class="col col-12 col-md-3 pt-3">
+          <span class="fw-bold">MINISHOP</span>
+          <p class="pt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+
+          <div class="pt-4" data-aos="fade-up">
+            <span class=""><i class="fa-brands fa-twitter fs-2 my-hover" style="cursor: pointer;"></i></span>
+            <span class="px-4"><i class="fa-brands fa-facebook-f fs-3 my-hover" style="cursor: pointer;"></i></span>
+            <span class=""><i class="fa-brands fa-instagram fs-2 my-hover" style="cursor: pointer;"></i></span>
+          </div>
+        </div>
+
+        <div class="col col-12 col-md-2 pt-3">
+          <span class="fw-bold">MENU</span>
+
+          <p class="pt-3">Shop</p>
+          <p>About</p>
+          <p>Journal</p>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="col col-12 col-md-3 pt-3">
+          <span class="fw-bold">HELP</span>
+
+          <p class="pt-3">Shipping Information</p>
+          <p>Returns & Exchange</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+
+        <div class="col col-12 col-md-4 pt-3">
+          <span class="fw-bold">HAVE A QUESTIONS?</span>
+
+          <div class="row pt-3">
+            <div class="col col-1">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="col col-11">
+              <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+            </div>
+          </div>
+
+          <div class="row py-3">
+            <div class="col col-1">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="col col-11">
+              <span>+2 392 3929 210</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-1">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="col col-11">
+              <span>info@yourdomain.com</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="row text-center pt-5">
+        <p>Copyright ©2023 All rights reserved | This template is made by <span style="color: #cfc083;">Joseph</span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Ends Here -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
