@@ -21,6 +21,25 @@
       }
     }
 
+    /* -------- Products Section Style --------- */
+    .my-card-color {
+      background-color: #f0ecec !important;
+    }
+
+    .buynow {
+      background-color: rgb(234, 177, 103) !important;
+    }
+
+    .buynow:hover {
+      background-color: rgb(232, 158, 62) !important;
+    }
+
+    .card:hover .myimg{
+      scale: 1.1;
+      transition: all 0.4s ease-in-out;
+    }
+
+
     /*  --------- Gallery Section Style -------- */
     #crd1 {
       background: url(images/choose-1.jpg.webp);
@@ -42,6 +61,11 @@
     @media screen and (min-width:992px) and (max-width:1200px) {
       .my-shoe-img {
         width: 400px !important;
+      }
+
+      .buynow,
+      .addtocart {
+        font-size: 0.8rem;
       }
     }
 
@@ -85,7 +109,7 @@
     }
 
     .my-hover:hover {
-      color: #c2a942;
+      color: #c2a942 !important;
     }
   </style>
 
@@ -285,11 +309,21 @@
       <div class="row pb-4">
         <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
           <div class="card">
-            <img src="images/product-1.png.webp" class="card-img-top" alt="..."
-              style="background-color: #f0ecec !important;">
 
+            <div class="my-card-color">
+            <img src="images/product-1.png" class="card-img-top myimg" alt="...">
+            </div>
 
             <div class="card-body">
+
+              <div class="row text-center mb-3">
+                <button class="col col-6 bg-dark text-light px-1 py-3 border-0 addtocart">
+                  ADD TO CART <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="col text-dark px-2 py-3 ms-1 border-0 buynow">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
 
               <div class="row">
 
@@ -318,9 +352,21 @@
         </div>
         <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
           <div class="card">
-            <img src="images/product-2.png.webp" class="card-img-top" alt="..."
-              style="background-color: #f0ecec !important;">
+
+            <div class="my-card-color">
+            <img src="images/product-2.png" class="card-img-top myimg" alt="...">
+            </div>
+
             <div class="card-body">
+
+              <div class="row text-center mb-3">
+                <button class="col col-6 bg-dark text-light px-1 py-3 border-0 addtocart">
+                  ADD TO CART <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="col text-dark px-2 py-3 ms-1 border-0 buynow">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
 
               <div class="row">
                 <div class="col col-6">
@@ -349,10 +395,21 @@
         </div>
         <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
           <div class="card">
-            <img src="images/product-3.png.webp" class="card-img-top" alt="..."
-              style="background-color: #f0ecec !important;">
+
+            <div class="my-card-color">
+            <img src="images/product-3.png" class="card-img-top myimg" alt="...">
+            </div>
 
             <div class="card-body">
+
+              <div class="row text-center mb-3">
+                <button class="col col-6 bg-dark text-light px-1 py-3 border-0 addtocart">
+                  ADD TO CART <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="col text-dark px-2 py-3 ms-1 border-0 buynow">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
 
               <div class="row">
                 <div class="col col-6">
@@ -379,9 +436,21 @@
         </div>
         <div class="col col-12 col-md-6 col-lg-3 pb-4" data-aos="fade-up">
           <div class="card">
-            <img src="images/product-4.png.webp" class="card-img-top" alt="..."
-              style="background-color: #f0ecec !important;">
+            
+            <div class="my-card-color">
+            <img src="images/product-4.png" class="card-img-top myimg" alt="...">
+            </div>
+
             <div class="card-body">
+
+              <div class="row text-center mb-3">
+                <button class="col col-6 bg-dark text-light px-1 py-3 border-0 addtocart">
+                  ADD TO CART <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="col text-dark px-2 py-3 ms-1 border-0 buynow">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
 
               <div class="row">
                 <div class="col col-6">
@@ -411,11 +480,22 @@
       <div class="row pb-5">
         <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
           <div class="card">
-            <img src="images/product-5.png.webp" class="card-img-top" alt="..."
-              style="background-color: #f0ecec !important;">
+
+            <div class="my-card-color">
+            <img src="images/product-5.png" class="card-img-top myimg" alt="...">
+            </div>
 
 
             <div class="card-body">
+
+              <div class="row text-center mb-3">
+                <button class="col col-6 bg-dark text-light px-1 py-3 border-0 addtocart">
+                  ADD TO CART <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="col text-dark px-2 py-3 ms-1 border-0 buynow">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
 
               <div class="row">
 
@@ -444,9 +524,21 @@
         </div>
         <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
           <div class="card">
-            <img src="images/product-6.png.webp" class="card-img-top" alt="..."
-              style="background-color: #f0ecec !important;">
+
+            <div class="my-card-color">
+            <img src="images/product-6.png" class="card-img-top myimg" alt="...">
+            </div>
+
             <div class="card-body">
+
+              <div class="row text-center mb-3">
+                <button class="col col-6 bg-dark text-light px-1 py-3 border-0 addtocart">
+                  ADD TO CART <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="col text-dark px-2 py-3 ms-1 border-0 buynow">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
 
               <div class="row">
                 <div class="col col-6">
@@ -475,10 +567,21 @@
         </div>
         <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
           <div class="card">
-            <img src="images/product-7.png.webp" class="card-img-top" alt="..."
-              style="background-color: #f0ecec !important;">
+
+            <div class="my-card-color">
+            <img src="images/product-7.png" class="card-img-top myimg" alt="...">
+            </div>
 
             <div class="card-body">
+
+              <div class="row text-center mb-3">
+                <button class="col col-6 bg-dark text-light px-1 py-3 border-0 addtocart">
+                  ADD TO CART <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="col text-dark px-2 py-3 ms-1 border-0 buynow">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
 
               <div class="row">
                 <div class="col col-6">
@@ -505,9 +608,21 @@
         </div>
         <div class="col col-12 col-md-6 col-lg-3 pb-5" data-aos="fade-up">
           <div class="card">
-            <img src="images/product-8.png.webp" class="card-img-top" alt="..."
-              style="background-color: #f0ecec !important;">
+
+            <div class="my-card-color">
+            <img src="images/product-8.png" class="card-img-top myimg" alt="...">
+            </div>
+
             <div class="card-body">
+
+              <div class="row text-center mb-3">
+                <button class="col col-6 bg-dark text-light px-1 py-3 border-0 addtocart">
+                  ADD TO CART <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="col text-dark px-2 py-3 ms-1 border-0 buynow">
+                  BUY NOW <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
 
               <div class="row">
                 <div class="col col-6">
@@ -642,15 +757,15 @@
 
           <div class="row">
             <div class="col">
-              <img src="images/product-6.png.webp" alt="" width="100" class="my-shoe-list">
+              <img src="images/product-6.png" alt="" width="100" class="my-shoe-list">
             </div>
 
             <div class="col">
-              <img src="images/product-2.png.webp" alt="" width="100" class="my-shoe-list">
+              <img src="images/product-2.png" alt="" width="100" class="my-shoe-list">
             </div>
 
             <div class="col">
-              <img src="images/product-4.png.webp" alt="" width="100" class="my-shoe-list">
+              <img src="images/product-4.png" alt="" width="100" class="my-shoe-list">
             </div>
 
           </div>
